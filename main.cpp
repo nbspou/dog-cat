@@ -128,7 +128,7 @@ int main(int argc, char *argv[])
 				if (marker && (bufLen > 1) || bufLen >= 255)
 				{
 					stringstream ss;
-					ss << messageStart << (bufLen - 1) << "};" << title;
+					ss << messageStart << (bufLen - 1) << "}:" << title;
 					ss << "|";
 					ss.write(buf, bufLen - 1);
 					if (wantTimestampAdded)
